@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :user_keys
+  resources :song_keys
   resources :songs
   resources :keys
   resources :users, only: [:create, :index]

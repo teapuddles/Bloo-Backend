@@ -1,4 +1,4 @@
 class Song < ApplicationRecord
-  belongs_to :user
-  belongs_to :key
+  has_many :song_keys
+  has_many :keys, through: :song_keys
 end
