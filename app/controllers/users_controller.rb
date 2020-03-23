@@ -1,6 +1,5 @@
 class UsersController < ApplicationController
-  # before_action: authorized, only: [:persist]
-
+  before_action :authorized, only: [:persist]
 
   def index
     user = User.all 
