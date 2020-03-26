@@ -9,7 +9,7 @@ User.delete_all
 Song.delete_all
 Key.delete_all
 SongKey.delete_all
-UserKey.delete_all
+
 
 kevin = User.create(username: "Kevin", password: "123")
 kerri = User.create(username: "Kerri", password: "corgi")
@@ -77,4 +77,3 @@ songkey22 = SongKey.create(song_id:3, key_id:10)
 songkey23 = SongKey.create(song_id:2, key_id:3)
 songkey24 = SongKey.create(song_id:1, key_id:2)
 
-userkey1 = UserKey.create(user_id:1, key_id:9)
